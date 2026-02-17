@@ -18,14 +18,7 @@ public class slidingwindowminimum{
             arr[i]=(arr[i-1]*a+b)%c;
         }
         
-        long res = 0;
-        for(int i=0; i+k<=n; i++){
-            long min=Long.MAX_VALUE;
-            for(int j=i; j<i+k; j++){
-                min = Math.min(min, arr[j]);
-            }
-            res ^= min;
-        }
-        System.out.println(res);
+        Deque<Integer> dq = new ArrayDeque<>();
+        
     }
 }
